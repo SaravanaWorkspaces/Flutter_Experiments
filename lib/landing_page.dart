@@ -15,7 +15,7 @@ class _LandingPageState extends State<LandingPage> {
     tes = "s";
     return new MaterialApp(
       title: "Flutter Sample",
-      theme: Styles.APP_THEME,
+      theme: Styles.appTheme,
       home: PageContainer(),
     );
   }
