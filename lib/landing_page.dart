@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'styles.dart';
 
+dynamic tes = 10;
+
 /// Landing page.
 class LandingPage extends StatefulWidget {
   @override
@@ -10,6 +12,7 @@ class LandingPage extends StatefulWidget {
 class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
+    tes = "s";
     return new MaterialApp(
       title: "Flutter Sample",
       theme: Styles.APP_THEME,
@@ -30,7 +33,7 @@ class PageContainer extends StatelessWidget {
           child: new Column(
             children: <Widget>[
               new Container(
-                padding: EdgeInsets.all(12.0),
+                padding: EdgeInsets.symmetric(vertical: 10.0),
                 child: new RaisedButton(
                   onPressed: onPressed,
                   elevation: 2.5,
@@ -39,7 +42,7 @@ class PageContainer extends StatelessWidget {
                 ),
               ),
               new Container(
-                padding: EdgeInsets.all(12.0),
+                padding: EdgeInsets.symmetric(vertical: 10.0),
                 child: new RaisedButton(
                   elevation: 2.5,
                   highlightElevation: 10.0,
