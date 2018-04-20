@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'styles.dart';
+import 'package:flutter_app/utils/styles.dart';
 
-dynamic tes = 10;
+var tes = 10;
 
 /// Landing page.
 class LandingPage extends StatefulWidget {
@@ -12,7 +12,6 @@ class LandingPage extends StatefulWidget {
 class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
-    tes = "s";
     return new MaterialApp(
       title: "Flutter Sample",
       theme: Styles.appTheme,
@@ -35,7 +34,7 @@ class PageContainer extends StatelessWidget {
               new Container(
                 padding: EdgeInsets.symmetric(vertical: 10.0),
                 child: new RaisedButton(
-                  onPressed: onPressed,
+                  onPressed: moveNextPage,
                   elevation: 2.5,
                   highlightElevation: 10.0,
                   child: new Text("Move next page"),
@@ -56,4 +55,8 @@ class PageContainer extends StatelessWidget {
   }
 
   void onPressed() {}
+
+  void moveNextPage() {
+
+  }
 }
