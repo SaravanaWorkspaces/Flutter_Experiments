@@ -13,5 +13,4 @@ class Styles {
   /// App theme.
   static ThemeData appTheme = new ThemeData(
       primaryColor: _primaryColor, scaffoldBackgroundColor: _backgroundColor);
-
 }
